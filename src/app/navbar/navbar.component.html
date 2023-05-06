@@ -1,0 +1,84 @@
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Project detection</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="#">upload</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact">contact us</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  
+    <!-- Background image -->
+    <div
+      class="p-5 text-center bg-image"
+      style="
+        background-image: url('assets/slide.png');
+        height: 700px;
+        
+        background-repeat: no-repeat;
+      "
+    >
+      <div>
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <br><br><br><br>
+            <h1 class="mb-3">Detect bruise types using AI</h1>
+            <h4 class="mb-3">Glass , walls , aealeka ...</h4>
+            <a class="btn btn-outline-light btn-lg" href="#!" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Upload data</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile01">
+              </div>
+              
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close-modal" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="submit()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
